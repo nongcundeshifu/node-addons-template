@@ -12,4 +12,4 @@ Napi::Object Init(Napi::Env env, Napi::Object exports) {
 }
 
 
-NODE_API_MODULE(camera_node_addons, Init);
+NODE_API_MODULE(addonsName, Init);

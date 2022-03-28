@@ -1,10 +1,13 @@
-# camera-node-addons
+# node-addons-template
 
-对接相机的node c++ 原生插件
+一个开发node c++插件的项目模板。
+
+> 注意，该项目在clion下创建。
 
 ## 目录说明
 
 - addons：c++插件源码
+- include：存放一些头文件的目录
 - src：封装addons插件的ts代码
   - addons-test：对c++插件代码进行测试
   - utils：模块内部使用的工具类，不对外导出

@@ -2,7 +2,7 @@
 
   "targets": [
     {
-      "target_name": "camera_node_addons",
+      "target_name": "addonsName",
       "sources": [
         "./addons/library.cpp",
       ],

@@ -1,16 +1,14 @@
 {
-  "name": "camera-node-addons",
+  "name": "node-addons-template",
   "version": "1.0.0",
-  "description": "相机node c++原生插件",
+  "description": "一个开发node c++插件的项目模板。",
   "keywords": [
     "c++ addons",
-    "node",
-    "camera",
-    "twain"
+    "node"
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "author": "nongcundeshifu",
+  "author": "",
   "license": "MIT",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

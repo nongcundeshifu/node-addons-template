@@ -23,6 +23,6 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": [
-    "src/addons-test/**/*.ts"
+    "src/**/*.ts"
   ]
 }
