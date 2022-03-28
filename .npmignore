@@ -1,0 +1,50 @@
+# git ignore
+.DS_Store
+.rpt2_cache/
+.nyc_output
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-error.log*
+*-debug.log
+*-error.log
+src
+js-test/
+.npmignore
+
+# Editor directories and files
+.idea
+.vscode
+.history
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.docz
+
+*.lock.json
+
+## npm ignore
+
+.github/
+docs/
+test/
+tests/
+.gitignore
+.huskyrc.js
+.lintstagedrc
+.nojekyll
+.prettierrc*
+CNAME
+CONTRIBUTING.md
+jest.config.js
+LICENSE
+readme.md
+readme-zh-cn.md
+.cache
+.eslintrc.js
+ rollup.config.js
+ tsconfig.json
+
+# c++内容
+cmake-build-*/
