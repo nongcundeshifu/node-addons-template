@@ -3,11 +3,14 @@
 //
 
 #include "gtest/gtest.h"
+#include "example.h"
+#include <iostream>
 
 TEST(testExample, test1) {
     EXPECT_EQ(2*3, 6);
+    std::cout<<"test success"<<std::endl;
 }
 
-TEST(testExample, test2) {
-    EXPECT_EQ("123", "123");
+TEST(testExample, add) {
+    EXPECT_EQ(add(2, 3), 5);
 }

@@ -4,11 +4,12 @@ project(node-addons-template)
 set(CMAKE_CXX_STANDARD 14)
 
 # 添加一些头文件
-include_directories(include C:\\Users\\nongcundeshifu\\AppData\\Local\\node-gyp\\Cache\\12.22.6\\include\\node node_modules\\node-addon-api)
+include_directories(include C:\\Users\\xxxxx\\AppData\\Local\\node-gyp\\Cache\\12.22.6\\include\\node node_modules\\node-addon-api)
+# 需要链接的lib库文件所在的目录
+link_directories(lib)
 
-# 用于添加源码文件，但是添加这个的原因是为了让ide能够进行代码提示，通常无需对这些源码进行构建，真正的编译是通过node-gyp的binding.gyp配置来编译的。
-# 注意，不能把包含带napi的源码文件添加进来，因为此时是无法通过编译的。
-add_executable(addons addons/main.cpp)
+# 用于测试代码的执行文件，并且让ide支持代码提示，但是不会真正运行它。真正编译lib库，是通过node-gpy工具来进行编译的。
+add_executable(addons addons/addons.cpp)
 
 # ------添加google test
 
@@ -25,7 +26,7 @@ FetchContent_MakeAvailable(googletest)
 # 构建googletest代码，使用了google test，则不需要main文件了
 enable_testing()
 
-add_executable(addons_test addons/__test__/testExample.cpp)
+add_executable(addons_test addons/__test__/testExample.cpp addons/__test__/example.cpp addons/__test__/example.h)
 target_link_libraries(
         addons_test
         gtest_main

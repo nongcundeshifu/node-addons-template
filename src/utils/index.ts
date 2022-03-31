@@ -1,5 +1,5 @@
 import bindings from "bindings"
-import {AddonsTypesName} from "../addons.types";
+import {AddonsTypesName} from "../addonsModel";
 
 const ADDONS_NAME = 'addonsName'
 

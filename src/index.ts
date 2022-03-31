@@ -1,5 +1,5 @@
 import { loadAddons } from "./utils";
-export * from './addons.types'
+export * from './addonsModel'
 
 export const cameraNodeAddons = loadAddons();
 
