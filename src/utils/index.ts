@@ -1,8 +1,12 @@
 import bindings from "bindings"
-import {AddonsTypesName} from "../addonsModel";
+import { NodeAddonsTemplate } from "../types/NodeAddonsTemplate";
 
-const ADDONS_NAME = 'addonsName'
+const ADDONS_NAME = 'node_addons_template'
 
-export function loadAddons(): AddonsTypesName {
+/**
+ * 加载封装的node addons sdk
+ */
+export function loadAddons(): NodeAddonsTemplate {
     return bindings(ADDONS_NAME);
 }
+
