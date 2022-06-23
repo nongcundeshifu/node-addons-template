@@ -14,11 +14,12 @@
   "scripts": {
     "build": "rimraf dist && rollup -c rollup.config.js",
     "docs": "typedoc src/index.ts",
-    "install": "yarn run addons-rebuild && node install/loadSources.js",
-    "prepublishOnly": "yarn build",
+    "install": "pnpm run addons-rebuild && node install/loadSources.js",
+    "prepublishOnly": "pnpm build",
     "configure": "node-gyp configure",
     "addons-build": "node-gyp build",
-    "addons-rebuild": "node-gyp rebuild"
+    "addons-rebuild": "node-gyp rebuild",
+    "test": "jest"
   },
   "dependencies": {
     "bindings": "^1.5.0",
